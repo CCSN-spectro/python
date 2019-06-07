@@ -73,12 +73,13 @@ def aLIGO_PSD_new(f,type):
                 
     return output
 
+
 # Main: noise generator    
     
-Fs = 20000.0
+Fs = 16384.0
 mean = 0.0
 std = 1.0
-n = int(10*Fs)
+n = 15621
 
 freq = Fs*np.fft.fftfreq(n)       # two-sided frequency vector
 psd2 = aLIGO_PSD(freq,2)          # two-sided PSD
